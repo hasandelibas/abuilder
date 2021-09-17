@@ -1,0 +1,46 @@
+/*
+
+shell{
+  #use shell command
+}
+
+abuilder path
+#call other abuilder
+
+file PATH 
+{
+  /opt/lampp/htdocs/cdn/delibas.js 
+  https://localhost:8000/view.js
+  file or web
+  >Line
+  -Same Line
+}
+#> Copy paste file to PATH file
+
+symlink source, target
+#> Create Symbolic Link
+
+mkdir
+#> It will create folder if not exists folder
+
+version 1.0.0
+#> Updating all building number
+
+replace from , to{
+  > I go from Ankara
+}
+#> I go to Ankara
+
+
+paramters firebase-id=1501545, secret-id=18512445, cmd
+#> Parametreleri tanımlar, atamasını yapar, eğer parametre belitilmez iseniz çalışma zamanında hata verir.
+
+{{ parameter }}
+#>ID: {{ firebase-id }} 
+
+minify-js
+#> Minify inside code js rules
+minify-css
+#> Minify inside code css rules
+
+*/

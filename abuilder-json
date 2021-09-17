@@ -1,0 +1,92 @@
+#!/opt/lampp/bin/php
+<?php
+
+$DIR = getcwd();
+
+function stripComments( $str ) {
+    return preg_replace( '![ \t]*//.*[ \t]*[\r\n]!', '', $str );
+}
+
+
+
+$file_options = file_get_contents($DIR."/abuilder.jsonc");
+$options = json_decode(  stripComments( $file_options ) ,true);
+if(!$options){
+    echo "<b style=color:red>Warning Options Json File not found </b>";
+    exit();
+}
+
+
+// Folder Calcing
+$view_folder = $options["view-folder"];
+$view_folder = str_replace("./","",$view_folder);
+if($view_folder[strlen($view_folder)-1] != "/" ){
+    $view_folder .= "/";
+}
+
+
+
+$files = json_decode(file_get_contents( $options["main"] ) , true );
+
+foreach ($files as $file_name => $file_content) {
+    file_put_contents($view_folder.$file_name,$file_content);
+}
+
+// Php Files
+$php_views = $options["php-views"];
+$views_file_content = "<?php \n";
+foreach ($php_views as $function_name => $url) {
+    if(empty($url)){
+        $fn = " [];";
+    }else{
+        $fn = file_get_contents($url);
+    }
+    if(empty($function_name)){
+        $views_file_content .= ";$fn ;\n";
+    }else{
+        $views_file_content .= "$function_name = $fn ;\n";
+    }
+}
+file_put_contents("views.inc.php",$views_file_content);
+
+
+// DOWNLOADS
+
+$download = $options["download"];
+foreach ($download as $file => $url_array) {
+    $file_content = "";
+    if(is_array($url_array)){
+        foreach ($url_array as $url) {
+            $file_content .= file_get_contents($url)."\n";
+        }
+    }else{
+        $file_content .= file_get_contents($url);
+    }
+    file_put_contents($file,$file_content);
+}
+
+
+
+// REPLACE FILES
+
+$replace = $options["replace"];
+
+foreach ($replace as $file_name => $replace_style) {
+    $file_content = file_get_contents($file_name);
+    
+    if(is_array($replace_style) && array_key_exists(0,$replace_style) ){
+        foreach ($replace_style as $replacement) {
+            $file_content =  str_replace( $replacement["from"],$replacement["to"],$file_content);
+        }
+    }else{
+        $file_content =  str_replace( $replace_style["from"],$replace_style["to"],$file_content);
+    }
+    file_put_contents($file_name,$file_content);
+}
+
+
+
+//include "Lib/Lib.inc.php";
+$file_options = str_replace('"min": '.$options["version"]["min"],'"min": '.(intval($options["version"]["min"])+1),$file_options);
+file_put_contents("abuilder.jsonc",$file_options);
+echo "UPDATED v".$options["version"]["max"].".".(intval($options["version"]["min"])+1)."\n". (time() % 10000) ."\n";

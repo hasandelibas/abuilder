@@ -1,0 +1,2 @@
+symlink /web/services/www.datamanager/public_html/admin/kernel/, admin/kernel
+symlink /web/services/www.datamanager/public_html/images/, images

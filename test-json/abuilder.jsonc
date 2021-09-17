@@ -1,0 +1,199 @@
+{
+	"view-folder": ".\/html",
+	"main": "http:\/\/localhost:8000\/view\/export-project\/WebBuilderMain",
+	"libs": [
+		
+	],
+	"php-views": {
+		"$WebBuilder": "",
+		"$WebBuilder[\"Main\"]": "http:\/\/localhost:8000\/php-view\/WebBuilder\/WebBuilder.Main",
+		"$WebBuilder[\"Modules\"]": "",
+		"$WebBuilder[\"Modules\"][\"TopMenu\"]": "http:\/\/localhost:8000\/php-view\/WebBuilder\/WebBuilder.Modules.TopMenu.__Php",
+		"$WebBuilder[\"Modules\"][\"Main\"]": "http:\/\/localhost:8000\/php-view\/WebBuilder\/WebBuilder.Modules.Main.__Php",
+		"$WebBuilder[\"Modules\"][\"Footer\"]": "http:\/\/localhost:8000\/php-view\/WebBuilder\/WebBuilder.Modules.Footer.__Php",
+		"$WebBuilder[\"Modules\"][\"Content\"]": "http:\/\/localhost:8000\/php-view\/WebBuilder\/WebBuilder.Modules.Content.__Php",
+		"$WebBuilder[\"Modules\"][\"Topic\"]": "http:\/\/localhost:8000\/php-view\/WebBuilder\/WebBuilder.Modules.Topic.__Php",
+		"$WebBuilder[\"Modules\"][\"Partel\"]": "http:\/\/localhost:8000\/php-view\/WebBuilder\/WebBuilder.Modules.Partel.__Php",
+		"$WebBuilder[\"Modules\"][\"PartelSlider\"]": "http:\/\/localhost:8000\/php-view\/WebBuilder\/WebBuilder.Modules.PartelSlider.__Php",
+		"$WebBuilder[\"Modules\"][\"Partel_Block\"]": "http:\/\/localhost:8000\/php-view\/WebBuilder\/WebBuilder.Modules.Partel.__Php.__Php_Block",
+		"$WebBuilder[\"AreaModules\"][\"Box\"]": "http:\/\/localhost:8000\/php-view\/WebBuilder\/WebBuilder.AreaModules.Box.__Php",
+		"$WebBuilder[\"AreaModules\"][\"GoldenBox\"]": "http:\/\/localhost:8000\/php-view\/WebBuilder\/WebBuilder.AreaModules.GoldenBox.__Php",
+		"$WebBuilder[\"AreaModules\"][\"Container\"]": "http:\/\/localhost:8000\/php-view\/WebBuilder\/WebBuilder.AreaModules.Container.__Php",
+		"$WebBuilder[\"AreaModules\"][\"Column2\"]": "http:\/\/localhost:8000\/php-view\/WebBuilder\/WebBuilder.AreaModules.Column2.__Php",
+		"$WebBuilder[\"AreaModules\"][\"Column3\"]": "http:\/\/localhost:8000\/php-view\/WebBuilder\/WebBuilder.AreaModules.Column3.__Php",
+		"$WebBuilder[\"AreaModules\"][\"Column4_8\"]": "http:\/\/localhost:8000\/php-view\/WebBuilder\/WebBuilder.AreaModules.Column4_8.__Php",
+		"$WebBuilder[\"AreaModules\"][\"Column8_4\"]": "http:\/\/localhost:8000\/php-view\/WebBuilder\/WebBuilder.AreaModules.Column8_4.__Php",
+		"$WebBuilder[\"AreaModules\"][\"ButtonRow\"]": "http:\/\/localhost:8000\/php-view\/WebBuilder\/WebBuilder.AreaModules.ButtonRow.__Php",
+		"$WebBuilder[\"BasicModules\"]": "",
+		"$WebBuilder[\"BasicModules\"][\"Social\"]": "http:\/\/localhost:8000\/php-view\/WebBuilder\/WebBuilder.BasicModules.Social.__Php",
+		"$WebBuilder[\"BasicModules\"][\"SocialSpecial\"]": "http:\/\/localhost:8000\/php-view\/WebBuilder\/WebBuilder.BasicModules.SocialSpecial.__Php",
+		"$WebBuilder[\"BasicModules\"][\"Header\"]": "http:\/\/localhost:8000\/php-view\/WebBuilder\/WebBuilder.BasicModules.Header.__Php",
+		"$WebBuilder[\"BasicModules\"][\"Header2\"]": "http:\/\/localhost:8000\/php-view\/WebBuilder\/WebBuilder.BasicModules.Header2.__Php",
+		"$WebBuilder[\"BasicModules\"][\"Paragraph\"]": "http:\/\/localhost:8000\/php-view\/WebBuilder\/WebBuilder.BasicModules.Paragraph.__Php",
+		"$WebBuilder[\"BasicModules\"][\"BannerText\"]": "http:\/\/localhost:8000\/php-view\/WebBuilder\/WebBuilder.BasicModules.BannerText.__Php",
+		"$WebBuilder[\"BasicModules\"][\"Image\"]": "http:\/\/localhost:8000\/php-view\/WebBuilder\/WebBuilder.BasicModules.Image.__Php",
+		"$WebBuilder[\"BasicModules\"][\"HTML\"]": "http:\/\/localhost:8000\/php-view\/WebBuilder\/WebBuilder.BasicModules.HTML.__Php",
+		"$WebBuilder[\"BasicModules\"][\"Button-WebSite\"]": "http:\/\/localhost:8000\/php-view\/WebBuilder\/WebBuilder.BasicModules.Button.WebSite.__Php",
+		"$WebBuilder[\"BasicModules\"][\"Button-Link\"]": "http:\/\/localhost:8000\/php-view\/WebBuilder\/WebBuilder.BasicModules.Button.Link.__Php",
+		"$WebBuilder[\"BasicModules\"][\"Button-Phone\"]": "http:\/\/localhost:8000\/php-view\/WebBuilder\/WebBuilder.BasicModules.Button.Phone.__Php",
+		"$WebBuilder[\"BasicModules\"][\"Button-Email\"]": "http:\/\/localhost:8000\/php-view\/WebBuilder\/WebBuilder.BasicModules.Button.Email.__Php",
+		"$WebBuilder[\"BasicModules\"][\"Button-Download\"]": "http:\/\/localhost:8000\/php-view\/WebBuilder\/WebBuilder.BasicModules.Button.Download.__Php",
+
+		"$WebBuilder[\"BasicModules\"][\"PageList\"]": "http:\/\/localhost:8000\/php-view\/WebBuilder\/WebBuilder.BasicModules.PageList.__Php"
+	},
+	"download": {
+		"views\/module.css": [
+			"http:\/\/localhost:8000\/lss-view\/nBasicThema\/Project",
+			"http:\/\/localhost:8000\/lss-multi-view\/WebBuilder\/WebBuilder.Themas.Standart",
+			"http:\/\/localhost:8000\/lss-view\/nBasicThema\/Project.Comp.Box.Parallax",
+			"http:\/\/localhost:8000\/lss-view\/nBasicThema\/Project.Lib.Layout.Column",
+			"http:\/\/localhost:8000\/lss-view\/nBasicThema\/Project.Lib.Layout.Wall",
+			"http:\/\/localhost:8000\/lss-view\/nBasicThema\/Project.Comp.ScrollBar",
+			"http:\/\/localhost:8000\/lss-view\/nBasicThema\/Project.Comp.Box.AnimateScroll",
+
+			"http:\/\/localhost:8000\/lss-view\/nBasicThema\/Project.Comp.Box.Animate.Animater",
+			/// "src\/fontello\/css\/fontello-embedded.css"
+			"src\/iconmoon\/icomoon.embed.css",
+			"http:\/\/localhost\/cdn\/animate.min.css"
+
+		],
+		"views\/module.js":[
+			"http:\/\/localhost\/cdn\/delibas.js",
+			"http:\/\/localhost\/cdn\/jquery-3.5.1.slim.min.js",
+			//"http:\/\/localhost\/cdn\/moveTo.min.js",
+			"http:\/\/localhost:8000\/js-view\/WebBuilder\/WebBuilder.Modules.TopMenu",
+			"http:\/\/localhost:8000\/js-view\/nBasicThema\/Project.Events.onscrollend",
+			"http:\/\/localhost:8000\/js-view\/nBasicThema\/Project.Events.onMouseDrag",
+			"http:\/\/localhost:8000\/js-view\/nBasicThema\/Project.Comp.Menus.MenuIcon",
+			"http:\/\/localhost:8000\/js-view\/nBasicThema\/Project.Comp.Box.Parallax",
+			"http:\/\/localhost:8000\/js-view\/nBasicThema\/Project.Comp.ScrollBar",
+			"http:\/\/localhost:8000\/js-view\/nBasicThema\/Project.Comp.Box.AnimateScroll",
+			"http:\/\/localhost:8000\/js-file\/WebBuilder\/WebBuilder.Themas.Components.Languages.List",
+			"http:\/\/localhost:8000\/js-multi-view\/WebBuilder\/WebBuilder.Themas.Standart",
+
+			"http:\/\/localhost:8000\/js-file\/nBasicThema\/Project.Events.triggersystem",
+			"http:\/\/localhost:8000\/js-file\/nBasicThema\/Project.Comp.Box.Animate.Animater",
+			"http:\/\/localhost:8000\/js-file\/WebBuilder\/WebBuilder.Themas.Standart.Slider"
+
+		],
+
+		"views\/thema.flat-1.css": [
+			"http:\/\/localhost:8000\/lss-multi-view\/WebBuilder\/WebBuilder.Themas.Settings",
+			"views\/module.css",
+			"http:\/\/localhost:8000\/lss-multi-view\/WebBuilder\/WebBuilder.Themas.Components.Navbar.Position.Fixed",
+			"http:\/\/localhost:8000\/lss-multi-view\/WebBuilder\/WebBuilder.Themas.Components.Navbar.MenuIcons.Row2",
+			"http:\/\/localhost:8000\/lss-multi-view\/WebBuilder\/WebBuilder.Themas.Components.Navbar.MapMenuPosition.Center",
+			"http:\/\/localhost:8000\/lss-multi-view\/WebBuilder\/WebBuilder.Themas.Components.Navbar.MobileMenus.FadeInRight",
+			"http:\/\/localhost:8000\/lss-multi-view\/WebBuilder\/WebBuilder.Themas.Components.Navbar.HoverEffect.Background",
+			"http:\/\/localhost:8000\/lss-multi-view\/WebBuilder\/WebBuilder.Themas.Components.Navbar.Heights.H50",
+			"http:\/\/localhost:8000\/lss-multi-view\/WebBuilder\/WebBuilder.Themas.Components.SocialLinks.Round",
+			"http:\/\/localhost:8000\/lss-multi-view\/WebBuilder\/WebBuilder.Themas.Components.Image.A",
+			"http:\/\/localhost:8000\/lss-multi-view\/WebBuilder\/WebBuilder.Themas.Components.Text.Line",
+			"http:\/\/localhost:8000\/lss-multi-view\/WebBuilder\/WebBuilder.Themas.Components.Buttons.Flat",
+			"http:\/\/localhost:8000\/lss-multi-view\/WebBuilder\/WebBuilder.Themas.Components.Languages.List"
+		],
+		"views\/thema.flat-1.js": [
+			"views\/module.js"
+		],
+		"views\/thema.flat-border.css": [
+			/// SETTINGS width vs standarts
+			"http:\/\/localhost:8000\/lss-multi-view\/WebBuilder\/WebBuilder.Themas.Settings",
+			
+			"views\/module.css",
+			/// Fixed
+			"http:\/\/localhost:8000\/lss-multi-view\/WebBuilder\/WebBuilder.Themas.Components.Navbar.Position.Fixed",
+			/// Row3 | Row2 | Burger
+			"http:\/\/localhost:8000\/lss-multi-view\/WebBuilder\/WebBuilder.Themas.Components.Navbar.MenuIcons.Burger",
+			/// Center , Full, Right, (Left?)
+			"http:\/\/localhost:8000\/lss-multi-view\/WebBuilder\/WebBuilder.Themas.Components.Navbar.MapMenuPosition.Center",
+			/// Right, Left, Top, FadeInRight
+			"http:\/\/localhost:8000\/lss-multi-view\/WebBuilder\/WebBuilder.Themas.Components.Navbar.MobileMenus.FadeInRight",
+			/// Background, Border
+			"http:\/\/localhost:8000\/lss-multi-view\/WebBuilder\/WebBuilder.Themas.Components.Navbar.HoverEffect.Background",
+			/// H50
+			"http:\/\/localhost:8000\/lss-multi-view\/WebBuilder\/WebBuilder.Themas.Components.Navbar.Heights.H50",
+			/// Round, RectangleX
+			"http:\/\/localhost:8000\/lss-multi-view\/WebBuilder\/WebBuilder.Themas.Components.SocialLinks.RectangleX",
+
+			// A B
+			"http:\/\/localhost:8000\/lss-multi-view\/WebBuilder\/WebBuilder.Themas.Components.Image.A",
+
+			// Line
+			"http:\/\/localhost:8000\/lss-multi-view\/WebBuilder\/WebBuilder.Themas.Components.Text.Line",
+
+			// FW 
+			"http:\/\/localhost:8000\/lss-multi-view\/WebBuilder\/WebBuilder.Themas.Components.PageList.FW",
+
+			// A 
+			"http:\/\/localhost:8000\/lss-multi-view\/WebBuilder\/WebBuilder.Themas.Components.Slider.A",
+			
+			"http:\/\/localhost:8000\/lss-multi-view\/WebBuilder\/WebBuilder.Themas.Components.Buttons.Flat",
+			"http:\/\/localhost:8000\/lss-multi-view\/WebBuilder\/WebBuilder.Themas.Components.Languages.List"
+			
+		],
+		"views\/thema.flat-border.js": [
+			"views\/module.js"
+		],
+		"views\/thema.soft-border.css": [
+			"http:\/\/localhost:8000\/lss-multi-view\/WebBuilder\/WebBuilder.Themas.Components.Buttons.RadiusBorder",
+			"http:\/\/localhost:8000\/lss-multi-view\/WebBuilder\/WebBuilder.Themas.SoftBorder"
+		],
+		"views\/editing.css": [
+			"http:\/\/localhost:8000\/lss-view\/WebBuilder\/WebBuilder.Helpers.RightMenu",
+			"http:\/\/localhost:8000\/lss-multi-view\/WebBuilder\/WebBuilder.Modules",
+			"http:\/\/localhost:8000\/lss-view\/nBasicThema\/Project.Comp.Box.Well",
+			"http:\/\/localhost:8000\/lss-view\/nBasicThema\/Project.Lib.Layout.PaddingMargin",
+			"http:\/\/localhost:8000\/lss-view\/nBasicThema\/Project.Comp.Popup.PopOver",
+			"http:\/\/localhost:8000\/lss-view\/nBasicThema\/Project.Comp.Menus.ListMenu",
+			"http:\/\/localhost:8000\/lss-view\/nBasicThema\/Project.Comp.Box.Animate",
+			"http:\/\/localhost:8000\/lss-view\/nBasicThema\/Project.Comp.Box.Animate.Animater",
+			"http:\/\/localhost:8000\/lss-view\/WebBuilder\/WebBuilder.Helpers.Resizer",
+			"http:\/\/localhost:8000\/lss-view\/WebBuilder\/WebBuilder.Helpers.ColorPicker"
+		],
+		"views\/editing.js": [
+			"http:\/\/localhost:8000\/js-view\/nBasicThema\/Project.Comp.Box.Animate",
+			"http:\/\/localhost:8000\/js-view\/nBasicThema\/Project.Comp.Box.Animate.Animater"
+		],
+		"views\/modules.js": [
+			"http:\/\/localhost:8000\/js-view\/WebBuilder\/WebBuilder.Modules.TopMenu",
+			"http:\/\/localhost:8000\/js-view\/nBasicThema\/Project.Events.onMouseDrag",
+			"http:\/\/localhost:8000\/js-view\/nBasicThema\/Project.Comp.Menus.MenuIcon",
+			"http:\/\/localhost:8000\/js-view\/nBasicThema\/Project.Comp.Box.Parallax",
+			"http:\/\/localhost:8000\/js-view\/nBasicThema\/Project.Comp.ScrollBar",
+			"http:\/\/localhost:8000\/js-view\/nBasicThema\/Project.Comp.Box.AnimateScroll"
+		],
+		"views\/admin-iframe-view.css": [
+			"http:\/\/localhost:8000\/lss-multi-view\/nBasicThema\/Project"
+		],
+		"views\/components.html": [
+			"http:\/\/localhost:8000\/view\/project\/WebBuilderComponents"
+		]
+	},
+	"replace": {
+		"html\/index.html": [
+			{
+				"from": "<\/html>",
+				"to": "<!-- N\u00f6bet\u00e7i \u00a9 --><\/html>"
+			}
+		],
+		"views\/components.html": [
+			{
+				"from": "<script src='\/view\/export-library\/WebBuilder'><\/script>",
+				"to": "<script src='\/admin\/html\/lib.js'><\/script>"
+			},{
+				"from": "<script src='\/view\/export-library\/nBasicThema'><\/script>",
+				"to": "<script src='\/admin\/html\/nBasicThema.lib.js'><\/script>"
+			}
+		]
+	},
+	"copy": [
+		{
+			"from": "",
+			"to": ""
+		}
+	],
+	"version": {
+		"max": "2",
+		"min": 1857
+	}
+}
