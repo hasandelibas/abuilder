@@ -1,0 +1,68 @@
+#!/opt/lampp/bin/php
+<?php
+
+
+function TruePath($path){
+    // whether $path is unix or not
+    $unipath=strlen($path)==0 || $path[0]!='/';
+    // attempts to detect if path is relative in which case, add cwd
+    if(strpos($path,':')===false && $unipath)
+        $path=getcwd().DIRECTORY_SEPARATOR.$path;
+    // resolve path parts (single dot, double dot and double delimiters)
+    $path = str_replace(array('/', '\\'), DIRECTORY_SEPARATOR, $path);
+    $parts = array_filter(explode(DIRECTORY_SEPARATOR, $path), 'strlen');
+    $absolutes = array();
+    foreach ($parts as $part) {
+        if ('.'  == $part) continue;
+        if ('..' == $part) {
+            array_pop($absolutes);
+        } else {
+            $absolutes[] = $part;
+        }
+    }
+    $path=implode(DIRECTORY_SEPARATOR, $absolutes);
+    // resolve any symlinks
+    if(file_exists($path) && linkinfo($path)>0)$path=readlink($path);
+    // put initial separator that could have been lost
+    $path =  '/'.$path;
+    return $path;
+}
+
+function CopyLink($source, $target){
+    if(is_dir($source)) {
+        if(!is_dir($target)){
+            mkdir($target);
+        }
+        $dir_handle=opendir($source);
+        while($file=readdir($dir_handle)){
+            if($file!="." && $file!=".."){
+                if(is_dir($source."/".$file)){
+                    if(!is_dir($target."/".$file)){
+                        mkdir($target."/".$file);
+                    }
+                    CopyLink($source."/".$file, $target."/".$file);
+                } else {
+                    link($source."/".$file, $target."/".$file);
+                }
+            }
+        }
+        closedir($dir_handle);
+    } else {
+        symlink($source, $target);
+    }
+}
+
+
+# Get Current Path
+$path = getcwd();
+
+echo "Current Path: ".$path."\n";
+
+$source = TruePath( $argv[1] );
+$target = TruePath( $argv[2] );
+
+echo "Source: $source\n";
+echo "Target: $target\n";
+
+
+CopyLink($source, $target);
